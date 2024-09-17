@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(128, 128, 128, 0.295);
+            padding: 50px;
+            margin-left: 400px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 6px double black;
+        }
+    </style>
+</head>
+<body> 
+    <div class="main">
+    <form action="">
+        <table>
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" placeholder="First Name" ></td>
+            </tr>
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="text" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>Mobile :</td>
+                <td><input type="text" placeholder="Mobile"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" name="a">Male
+                    <input type="radio"  name="a">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth :</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea cols="66" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>City :</td>
+                <td><input type="text" class="abc"></td>
+            </tr>
+            <tr>
+                <td>Pin :</td>
+                <td><input type="text" class="1"></td>
+            </tr>
+            <tr>
+                <td>State :</td>
+                <td><input type="text" class="2"></td>
+            </tr>
+            <tr>
+                <td>City :</td>
+                <td><input type="text" class="3"></td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <select>
+                        <option>Select Qualification</option>
+                        <option>B.Tech</option>
+                        <option>Bsc.it</option>
+                        <option>Msc.it</option>
+                    </select>
+                </td>
+                <tr>
+                    <td>Specialization :</td>
+                    <td>
+                        <input type="checkbox">Computer Science <br>
+                        <input type="checkbox">Information Technology <br>
+                        <input type="checkbox">Computer Architecture <br>
+                        <input type="checkbox">Tele Communication <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="text" class="4"></td>
+                </tr>
+                <tr>
+                    <td><button class="mybtn">Registration</button></td>
+                </tr>
+                
+            </tr>
+            
+            
+        </table>
+    </form>
+
+    
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('.mybtn').click(function() {
+            alert('plese filup the form');
+        });
+    });
+</script>
+
+</html>
